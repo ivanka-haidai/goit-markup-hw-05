@@ -420,19 +420,20 @@
         
       </div>
 
-      <div>
+      <div class="footer-subscribe-area">
         <p class="footer-subscribe-text">Subscribe</p>
-        <input class="footer-input" type="text" name="footer-email" placeholder="E-mail">
-          <button class="footer-subscribe-btn">
-            
-            <span class="footer-btn-label">Subscribe</span> 
-           <!--<span class="footer-btn-icon">
-              <svg class="" width="" height="">
-                <use href="./images/icons.svg#icon-send-icon"></use>
-              </svg>
-            </span>--> 
-            
+        <form class="footer-subscribe-form" action="">
+          <label class="footer-label">
+        <input class="footer-input" type="email" name="footer-email" placeholder="E-mail"></label>
+          <button class="footer-subscribe-btn" type="submit">
+            Subscribe
+            <svg class="footer-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send">
+
+              </use>
+            </svg>
           </button>
+          </form>
       </div>
 
 
@@ -458,7 +459,7 @@
     <input class="info-input" id="tel-input" type="text" name="phone">
     <label for="email-input" class="modal-lable">
       Email </label>
-      <input class="info-input" id="email-input" type="text" name="email">
+      <input class="info-input" id="email-input" type="email" name="email">
     <label for="comment-input" class="modal-lable">
       Comment</label>
       <textarea id="comment-input" class="modal-comment-area" type="text" name="comment" rows="5" placeholder="Text input"></textarea>
