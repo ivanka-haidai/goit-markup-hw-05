@@ -422,7 +422,7 @@
 
       <div class="footer-subscribe-area">
         <p class="footer-subscribe-text">Subscribe</p>
-        <form class="footer-subscribe-form" action="">
+        <form class="footer-subscribe-form">
           <label class="footer-label">
         <input class="footer-input" type="email" name="footer-email" placeholder="E-mail"></label>
           <button class="footer-subscribe-btn" type="submit">
@@ -444,32 +444,66 @@
 
 <div class="modal-overlay">
   <div class="modal">
-    <button class="modal-close-btn">
-  
+    <button class="modal-close-btn" type="button">
+      <svg class="modal-close-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
     </button>
     <p class="modal-title">Leave your contacts and we will call you back</p>
 
+    <form>
     <div class="modal-info">
-    <label for="name-input" class="modal-lable">
+    <label for="user-name" class="modal-lable">
       Name
     </label>
-    <input class="info-input" id="name-input" type="text" name="name" placeholder="" />
-    <label for="tel-input" class="modal-lable">
-      Phone</label>
-    <input class="info-input" id="tel-input" type="text" name="phone">
-    <label for="email-input" class="modal-lable">
-      Email </label>
-      <input class="info-input" id="email-input" type="email" name="email">
-    <label for="comment-input" class="modal-lable">
-      Comment</label>
-      <textarea id="comment-input" class="modal-comment-area" type="text" name="comment" rows="5" placeholder="Text input"></textarea>
-</div>
+    <div class="modal-input-icon">
+    <input class="info-input" id="user-name" type="text" name="name" placeholder="" />
+    <svg class="info-input-icon" width="18" height="24">
+      <use href="./images/icons.svg#icon-name"></use>
+    </svg>
+  </div>
+  </div>
 
-      <label class="privacy-policy-radiobtn">
-        <input class="radio-btn" type="radio">
-        I accept the terms and conditions of the <a class="privacy-policy-link">Privacy Policy</a></label>
+    <div class="modal-info">
+    <label for="user-phone" class="modal-lable">
+      Phone</label>
+      <div class="modal-input-icon">
+    <input class="info-input" id="user-phone" type="text" name="phone">
+    <svg class="info-input-icon" width="18" height="24">
+      <use href="./images/icons.svg#icon-phone"></use>
+    </svg>
+  </div>
+    </div>
+
+    <div class="modal-info">
+    <label for="user-email" class="modal-lable">
+      Email </label>
+      <div class="modal-input-icon">
+      <input class="info-input" id="user-email" type="email" name="email">
+      <svg class="info-input-icon" width="18" height="24">
+        <use href="./images/icons.svg#icon-email"></use>
+      </svg>
+      </div>
+      </div>
+
+      <div class="modal-comment">
+    <label for="user-comment" class="modal-lable">
+      Comment</label>
+      <textarea id="user-comment" class="modal-comment-area" name="user-comment" placeholder="Text input"></textarea>
+      </div>
+
+      <div class="modal-radio-checkbox">
+        <input class="radio-btn visually-hidden" type="checkbox" name="user-privacy" value="true" id="user-privacy">
+        <label for="user-privacy" class="privacy-policy-radiobtn">
+        <span class="modal-checkbox">
+          <svg class="modal-checkbox-icon" width="10" height="8">
+            <use href="./images/icons.svg#icon-checked"></use>
+          </svg>
+        </span> I accept the terms and conditions of the <a class="privacy-policy-link">Privacy Policy</a></label>
+        </div>
 
       <button type="submit" class="modal-btn-send">Send</button>
+    </form>
   </div>
 </div>
 
